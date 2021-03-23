@@ -1,7 +1,10 @@
 package com.example.sampleloginlibrary;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by Pravallika on 23-03-2021.
@@ -11,7 +14,12 @@ import android.widget.Toast;
  * <p>
  * Copyright (c) 2021 MouriTech. All rights reserved.
  */
-public class SampleLoginMessage {
+public class SampleLoginMessage extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.login);
+    }
     public static void s(Context c, String message){
 
         Toast.makeText(c,message,Toast.LENGTH_SHORT).show();
