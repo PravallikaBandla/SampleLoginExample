@@ -1,0 +1,3 @@
+include ':SampleLoginLibrary'
+include ':app'
+rootProject.name = "SampleLoginExample"
